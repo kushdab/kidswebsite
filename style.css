@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#video-section {
+    text-align: center;
+}
+
+#video-player {
+    width: 80%;
+    max-width: 600px;
+}
+
+#cartoon-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.cartoon-character {
+    text-align: center;
+}
+
+.cartoon-character img {
+    width: 150px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.cartoon-character img:hover {
+    transform: scale(1.1);
+}
+
+#interactive-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#game-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff6699;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#game-button:hover {
+    background-color: #ff3366;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffcc00;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
