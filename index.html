@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Learning Videos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
@@ -11,41 +12,44 @@
         <h1>Kids Learning Videos</h1>
         <p>Fun and Educational Content for Kids!</p>
         <nav>
-            <a href="#video-section">Watch Videos</a> |
-            <a href="#cartoon-section">Meet Characters</a> |
-            <a href="#interactive-section">Play a Game</a>
+            <a href="#video-section" class="nav-link">Watch Videos</a>
+            <a href="#cartoon-section" class="nav-link">Meet Characters</a>
+            <a href="#interactive-section" class="nav-link">Play a Game</a>
         </nav>
     </header>
 
-    <!-- Video Section -->
+    <!-- Main Section -->
     <main>
+        <!-- Video Section -->
         <section id="video-section">
             <h2>Featured Video</h2>
-            <video controls width="500">
+            <video controls id="video-player">
                 <source src="assets/sample-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p>Learn numbers in a fun way!</p>
+            <p class="description">Learn numbers in a fun way!</p>
         </section>
 
         <!-- Cartoon Characters Section -->
         <section id="cartoon-section">
             <h2>Meet Our Characters!</h2>
-            <div>
-                <img src="assets/character1.png" alt="Character 1" width="200">
-                <p>Character 1: Fun and friendly!</p>
-            </div>
-            <div>
-                <img src="assets/character2.png" alt="Character 2" width="200">
-                <p>Character 2: Always ready to learn!</p>
+            <div class="characters-container">
+                <div class="cartoon-character">
+                    <img src="assets/character1.png" alt="Character 1">
+                    <p>Character 1: Fun and friendly!</p>
+                </div>
+                <div class="cartoon-character">
+                    <img src="assets/character2.png" alt="Character 2">
+                    <p>Character 2: Always ready to learn!</p>
+                </div>
             </div>
         </section>
 
         <!-- Interactive Section -->
         <section id="interactive-section">
             <h2>Play a Game!</h2>
-            <p>Click the button below to play a simple game!</p>
-            <p>[Placeholder for game interaction]</p>
+            <button id="game-button">Click me to Play!</button>
+            <p id="game-message"></p>
         </section>
     </main>
 
@@ -53,5 +57,7 @@
     <footer>
         <p>&copy; 2024 Kids Learning Videos. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
